@@ -35,6 +35,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetpackcomposetutorial.data.model.Message
+import com.example.jetpackcomposetutorial.page.ExpendedScreen
 import com.example.jetpackcomposetutorial.ui.theme.JetpackComposeTutorialTheme
 
 class MainActivity : ComponentActivity() {
@@ -116,7 +117,8 @@ fun MessageCard(message: Message) {
 @Composable
 fun GreetingPreview() {
     JetpackComposeTutorialTheme {
-        MessageCard(message = Constance.message)
+        ExpendedScreen(message = Constance.message, Constance.messageCardItem)
+
     }
 }
 
